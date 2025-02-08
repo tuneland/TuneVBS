@@ -1,0 +1,14 @@
+function startQuiz() {
+  alert("Quiz: What is the benefit of an LLC? (Hint: Limited personal liability)");
+}
+
+function submitTasks() {
+  let grade = 0;
+  if (document.getElementById('task1').checked) grade += 2;
+  if (document.getElementById('task2').checked) grade += 2;
+  if (document.getElementById('task3').checked) grade += 2;
+  if (document.getElementById('task4').checked) grade += 2;
+  if (document.getElementById('task5').checked) grade += 2;
+
+  document.getElementById('grade-output').textContent = `Your Daily Grade: ${grade}/10`;
+}
